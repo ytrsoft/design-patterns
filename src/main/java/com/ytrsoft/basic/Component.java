@@ -1,5 +1,5 @@
 package com.ytrsoft.basic;
 
-public interface Button {
+public interface Component {
     void paint();
 }

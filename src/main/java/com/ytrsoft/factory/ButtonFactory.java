@@ -1,22 +1,19 @@
 package com.ytrsoft.factory;
 
-import com.ytrsoft.basic.Button;
-import com.ytrsoft.basic.ButtonType;
-import com.ytrsoft.basic.FlatButton;
-import com.ytrsoft.basic.RaisedButton;
+import com.ytrsoft.basic.button.Button;
+import com.ytrsoft.basic.button.FlatButton;
+import com.ytrsoft.basic.button.RaisedButton;
 
 public class ButtonFactory {
 
-    public Button getButton(ButtonType type) {
-        Button button = null;
-        switch (type) {
-            case FLAT:
-                button = new FlatButton();
-                break;
-            case RAISED:
-                button = new RaisedButton();
+    public Button getButton(String name) {
+        if (name.equalsIgnoreCase("flat")) {
+            return new FlatButton();
         }
-        return button;
+        if (name.equalsIgnoreCase("raised")) {
+            return new RaisedButton();
+        }
+        return null;
     }
 
 }
