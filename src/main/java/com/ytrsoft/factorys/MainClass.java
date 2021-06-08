@@ -5,6 +5,9 @@ import com.ytrsoft.basic.button.RaisedButton;
 import com.ytrsoft.basic.input.PasswordInput;
 import com.ytrsoft.basic.input.TextInput;
 
+/**
+ * 抽象工厂模式
+ */
 public class MainClass {
     public static void main(String[] args) {
         AbstractFactory  ab = new AbstractFactory();
