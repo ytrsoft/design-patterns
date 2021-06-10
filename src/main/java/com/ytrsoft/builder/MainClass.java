@@ -7,8 +7,9 @@ import com.ytrsoft.basic.User;
  */
 public class MainClass {
     public static void main(String[] args) {
-        ResponseEntity.ResponseEntityBuilder builder = new ResponseEntity.ResponseEntityBuilder();
-        ResponseEntity response = builder.data(new User("root", "0000"))
+        User user = new User("admin", "0000");
+        Response.ResponseBuilder builder =  new Response.ResponseBuilder();
+        Response response = builder.data(user)
                 .statusCode(200)
                 .statusMessage("OK")
                 .build();

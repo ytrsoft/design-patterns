@@ -1,6 +1,6 @@
 package com.ytrsoft.basic;
 
-public class User {
+public class User implements Cloneable {
 
     private String username;
 
@@ -25,6 +25,16 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public User clone()  {
+        try {
+            return (User) super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
