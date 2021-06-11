@@ -4,9 +4,7 @@ public class Jdbc {
 
     private static Jdbc instance;
 
-    private Jdbc() {
-        throw new UnsupportedOperationException();
-    }
+    private Jdbc() {}
 
     public static Jdbc getInstance() {
         if (instance == null) {
