@@ -1,5 +1,8 @@
 package com.ytrsoft.adapter;
 
+/**
+ * 适配器模式
+ */
 public class MainClass {
     public static void main(String[] args) {
         JSONParser jsonParser = new JSONParser();

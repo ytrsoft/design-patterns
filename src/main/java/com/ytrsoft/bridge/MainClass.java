@@ -7,6 +7,9 @@ import com.ytrsoft.basic.color.Black;
 import com.ytrsoft.basic.color.Color;
 import com.ytrsoft.basic.color.White;
 
+/**
+ * 桥接模式
+ */
 public class MainClass {
     public static void main(String[] args) {
         Color white = new White();
