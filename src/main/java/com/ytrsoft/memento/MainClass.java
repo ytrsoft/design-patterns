@@ -1,7 +1,7 @@
 package com.ytrsoft.memento;
 
 /**
- *  备忘录设计模式
+ *  备忘录模式
  */
 public class MainClass {
     public static void main(String[] args) {

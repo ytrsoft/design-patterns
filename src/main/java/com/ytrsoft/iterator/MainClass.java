@@ -1,7 +1,7 @@
 package com.ytrsoft.iterator;
 
 /**
- * 迭代器设计模式
+ * 迭代器模式
  */
 public class MainClass {
     public static void main(String[] args) {

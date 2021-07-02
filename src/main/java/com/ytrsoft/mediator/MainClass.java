@@ -1,7 +1,7 @@
 package com.ytrsoft.mediator;
 
 /**
- * 中介者设计模式
+ * 中介者模式
  */
 public class MainClass {
     public static void main(String[] args) {
